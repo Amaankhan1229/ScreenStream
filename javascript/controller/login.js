@@ -16,9 +16,9 @@ async function signup(event){
    try {
     const response  = await signInWithEmailAndPassword(auth,email,password);
     console.log(response);
-    // alert("user Login successfully")
+    alert("user Login successfully")
     localStorage.setItem("isAuth",true);
-    // window.location.href = "/netflix-clone/index.html"
+    window.location.href = "/netflix-clone/index.html"
    } catch (error) {
     alert(`Error in Creating ${error}`)
    }

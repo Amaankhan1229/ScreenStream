@@ -9,14 +9,14 @@ function bindEvents(){
 
 async function signup(event){
     event.preventDefault();
-    // console.log(this.username.value);
+  
     const username = this.name.value;
     const email = this.email.value;
     const password= this.password.value;
    
    try {
     const response  = await createUserWithEmailAndPassword(auth,email,password);
-    alert("user created")
+    alert("user created");
     window.location.href = "/netflix-clone/login.html"
    } catch (error) {
     alert(`Error in Creating ${error}`)

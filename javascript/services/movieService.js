@@ -65,7 +65,7 @@ const MOVIESERVICE = {
         const response = await fetch(  `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=664e565dee7eaa6ef924c41133a22b63
             `);
             const data = await response.json();
-            data.results.forEach((movie)=>{
+            data?.results?.forEach((movie)=>{
                 const videoDetail= new Video(movie.key,movie.name);
                 this.movieList.videoList.push(videoDetail);
     

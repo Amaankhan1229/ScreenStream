@@ -90,7 +90,7 @@ function showMovies(movies,type){
 function showDetails(){
     const movieId = this.getAttribute("movieId");
 
-    window.location.href = `http://127.0.0.1:5500/netflix-clone/detail.html?movieId=${movieId}`
+    window.location.href = `http://extraordinary-belekoy-aa52e7.netlify.app/detail.html?movieId=${movieId}`
 }
 
 
@@ -101,9 +101,14 @@ async function debounce(){
     console.log(data);
     const searchData = document.getElementById("searchData")
     searchData.innerHTML = ""
+    searchData.classList.add("searchBar");
+    searchData.setAttribute("movieId",movie.id)
+    searchData.addEventListener('click', showMovies)
     data.movies.forEach((movie)=>{
         const div = document.createElement("div");
+        // div.classList.add("searchBar")
         div.innerText = movie.title
+        // div.addEventListener('click',showDetails);
         searchData.appendChild(div)
     })
 }

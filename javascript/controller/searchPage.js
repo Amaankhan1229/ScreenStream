@@ -99,5 +99,5 @@ function showMovies(movies,totalPages,page){
 function showDetails(){
     const movieId = this.getAttribute("movieId");
 
-    window.location.href = `http://extraordinary-belekoy-aa52e7.netlify.app/detail.html?movieId=${movieId}`
+    window.location.href = `https://screenstream-app.netlify.app/detail.html?movieId=${movieId}`
 }

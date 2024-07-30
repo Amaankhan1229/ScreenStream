@@ -58,7 +58,7 @@ function showGeneres(generes){
         div.innerText = gen.name
 
         div.addEventListener("click",function(){
-            window.location.href = `/netflix-clone/search.html?genre=${gen.id}`
+            window.location.href = `https://screenstream-app.netlify.app/search.html?genre=${gen.id}`
         })
         select.appendChild(div)
     })

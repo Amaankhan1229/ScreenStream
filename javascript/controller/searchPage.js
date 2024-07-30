@@ -87,7 +87,7 @@ function showMovies(movies,totalPages,page){
     
     for (let i = 1; i < 10; i++) {
         const a = document.createElement("a"); 
-        a.href = `/netflix-clone/search.html?${newUrl}&page=${i}`
+        a.href = `https://screenstream-app.netlify.app/search.html?${newUrl}&page=${i}`
         a.innerText = i
         if(page==i){
             a.classList.add("highlight")

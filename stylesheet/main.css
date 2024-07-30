@@ -179,6 +179,12 @@ img {
   padding: 5px 0;
   color: rgb(202, 202, 202);
 }
+.Name{
+  font-size: 20px;
+  font-weight: bold;
+  color:crimson;
+
+}
 
 #pagination {
   margin: 0 auto;
@@ -233,6 +239,9 @@ img {
 
 
 @media (max-width: 480px) {
+  .Name{
+    font-size: 15px;
+  }
   .logo a {
       font-size: 20px;
   }
